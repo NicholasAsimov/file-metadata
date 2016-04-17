@@ -7,7 +7,7 @@ Written by: [Nicholas Asimov](https://www.freecodecamp.com/nicholasasimov)
 1. I can submit a FormData object that includes a file upload.
 2. When I submit something, I will receive the file size in bytes within the JSON response.
 
-*Files are stored into memory and removed by the garbage collector after you get a response.*
+*Files are stored in memory and removed by the garbage collector after you get a response.*
 
 ### Example usage
 ```
