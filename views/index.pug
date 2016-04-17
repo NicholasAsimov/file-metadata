@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    title File Metadata Microservice - Nicholas Asimov
+    link(href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css", rel="stylesheet", integrity="sha384-XYCjB+hFAjSbgf9yKUgbysEjaVLOXhCgATTEBpCqT1R3jvG5LGRAK5ZIyRbH5vpX", crossorigin="anonymous")
+  body
+    .container
+      h1(style="margin-bottom: 15px;") API Basejump: File Metadata Microservice
+      p Written by: #[a(href="https://www.freecodecamp.com/nicholasasimov") Nicholas Asimov]
+
+      blockquote
+        h3 User stories
+        ol
+          li I can submit a FormData object that includes a file upload.
+          li When I submit something, I will receive the file size in bytes within the JSON response.
+
+      em Files are stored into memory and removed by the garbage collector after you get a response.
+
+      h3 Example usage
+      code.
+        Upload the file via form on root page or send a POST to https://file-info.herokuapp.com/upload
+        with Content-Type: multipart/form-data and name="file"
+
+      h3 Example output
+      code { "name": "README.md", "encoding": "7bit", "mimetype": "text/markdown", "size": 568 }
+
+      form(
+        id="file-form"
+        action="upload"
+        method="post"
+        enctype="multipart/form-data"
+        style="margin-top: 30px;"
+      )
+
+        input(type="file", name="file", style="display: inline;")
+        input(type="submit", value="Upload")

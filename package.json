@@ -1,0 +1,30 @@
+{
+  "name": "file-metadata",
+  "version": "1.0.0",
+  "description": "Written by: [Nicholas Asimov](https://www.freecodecamp.com/nicholasasimov)   [FreeCodeCamp](https://www.freecodecamp.com) - [API Project: File Metadata Microservice](https://www.freecodecamp.com/challenges/file-metadata-microservice)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicholasAsimov/file-metadata.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicholasAsimov/file-metadata/issues"
+  },
+  "homepage": "https://github.com/NicholasAsimov/file-metadata#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "multer": "^1.1.0",
+    "multer-autoreap": "0.0.9",
+    "pug": "^2.0.0-alpha4"
+  },
+  "devDependencies": {
+    "eslint": "^2.8.0",
+    "eslint-config-airbnb": "^7.0.0"
+  }
+}
